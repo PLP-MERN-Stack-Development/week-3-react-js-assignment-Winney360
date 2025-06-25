@@ -1,6 +1,6 @@
 # PLP Task Manager
 
-![Demo](https://i.imgur.com/JfQi6UH.gif)  
+
 *A responsive task management app with dark mode support*
 
 ## Features
@@ -34,10 +34,11 @@ npm install
 
 # Start development server
 npm run dev
+```
 
-
-Alternatively: you can click to my deployed link below
+### Alternatively: you can click to my deployed link below
 https://mern-week3-git-main-winfred-kimathis-projects.vercel.app
 
 
 screenshots are under the screenshots folder
+
