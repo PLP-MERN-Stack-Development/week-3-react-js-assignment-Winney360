@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports {
+  darkMode: 'selector',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx,}"
@@ -20,12 +21,20 @@ export default {
     'rounded', 'rounded-md',
     // Disabled states
     'opacity-50', 'cursor-not-allowed',
+    // Dark mode classes
+    'dark:bg-gray-800',
+    'dark:bg-gray-700',
+    'dark:text-gray-200',
+    'dark:text-gray-300',
+    'dark:border-gray-700',
+    'dark:hover:bg-gray-700/50',
     
-    // ▼▼▼ DARK MODE CLASSES 
+    
+    // ▼▼▼ DARK MODE CLASSES (if using) ▼▼▼
     'dark:bg-gray-800', 'dark:text-white', 'dark:hover:bg-gray-700'
   ],
   
-  darkMode: 'class',
+  
   theme: {
     extend: {
       animation: {
@@ -41,6 +50,10 @@ export default {
           '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+         screens: {
+        'xs': '475px',  // Extra small devices
+        '3xl': '1792px' // Large desktop
+      }
       },
     },
   },

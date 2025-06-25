@@ -1,8 +1,5 @@
-module.exports = ({ env }) => ({
+export default {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-    // Add cssnano only in production
-    ...(env === 'production' ? { cssnano: {} } : {})
+    "@tailwindcss/postcss": {},
   }
-})
+}
